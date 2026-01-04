@@ -7,7 +7,7 @@ The system is intentionally designed as a **stateless execution graph** with exp
 ---
 
 ## Architecture Overview
-
+```
 research_agent/
 │
 ├── tools/        <- Agentic tools
@@ -32,3 +32,4 @@ research_agent/
 │   └── .py
 │
 └── main.py        <- Entry Point
+```
