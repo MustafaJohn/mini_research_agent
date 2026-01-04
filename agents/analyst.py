@@ -6,13 +6,14 @@ from orchestration.state import ResearchState
 vector_mem = VectorMemory()
 graph_mem = GraphMemory()
 
-# thresholds — tweakable knobs
+# thresholds 
 MIN_VECTOR_HITS = 3
 MIN_AVG_SCORE = 0.6
 MIN_GRAPH_HITS = 1
 
 
 def analyst_agent(state: ResearchState) -> ResearchState:
+    """Agent to analyze the information and create relevant context"""
     query = state["query"]
 
     # --- 1. Vector retrieval ---
@@ -28,7 +29,7 @@ def analyst_agent(state: ResearchState) -> ResearchState:
     # --- 2. Graph reasoning ---
     graph_hits = []
     for hit in vector_hits:
-        # simple heuristic: try multiple entity anchors
+
         tokens = hit["chunk"].split()[:5]
         for t in tokens:
             graph_hits.extend(graph_mem.query_entities(t))
@@ -45,7 +46,6 @@ def analyst_agent(state: ResearchState) -> ResearchState:
         return state
 
     if len(graph_hits) < MIN_GRAPH_HITS:
-        # still acceptable — graph memory is a bonus
         state["analysis_decision"] = "ready"
     else:
         state["analysis_decision"] = "ready"
@@ -63,3 +63,4 @@ def analyst_agent(state: ResearchState) -> ResearchState:
     state["final_context"] = "\n\n".join(context_blocks)
 
     return state
+
