@@ -53,10 +53,11 @@ class ResearchState(TypedDict):
     query: str
     fetched_docs: list
     vector_results: list
-    graph_results: list
+    graph_results: List
     final_context: str
     next_step: str
     analysis_decision: str
+    sources: Dict   
 ```
 
 ## Memory Subsystems
