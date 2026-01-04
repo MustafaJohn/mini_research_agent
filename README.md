@@ -1,4 +1,4 @@
-# Multi-Agent Research System (Execution-Centric Prototype)
+# Multi-Agent Research System 
 
 This project implements an execution-driven, agentic research system using LangGraph. The focus is on **control flow, state management, tool isolation, and memory separation**, rather than prompt chaining. 
 
