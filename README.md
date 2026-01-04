@@ -4,6 +4,7 @@ This project implements an execution-driven, agentic research system using LangG
 
 The system is intentionally designed as a stateless execution graph with explicit state transitions and defined failure boundaries.
 
+Install requirements using requirements.txt
 ---
 
 ## Architecture Overview
