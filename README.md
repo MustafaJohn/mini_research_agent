@@ -34,3 +34,27 @@ research_agent/
 └── main.py        <- Entry Point
 ```
 <img width="489" height="447" alt="image" src="https://github.com/user-attachments/assets/8706cd06-b394-4843-baf6-d186be9dace8" />
+
+## Design Principles
+
+- **Execution-first orchestration**
+- **Explicit state passed between nodes**
+- **Tool failures surfaced into state**
+- **Supervisor-controlled decision flow**
+- **Memory separated from execution**
+- **LLMs treated as interchangeable components**
+
+## State Model
+
+All agents operate on a shared `ResearchState`:
+
+```python
+class ResearchState(TypedDict):
+    query: str
+    fetched_docs: list
+    vector_results: list
+    graph_results: list
+    final_context: str
+    next_step: str
+    analysis_decision: str
+```
