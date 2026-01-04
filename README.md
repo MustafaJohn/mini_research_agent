@@ -29,7 +29,7 @@ research_agent/
 │
 ├── orchestration/
 │   └── graph.py   <- LangGraph DAG
-│   └── .py
+│   └── state.py
 │
 └── main.py        <- Entry Point
 ```
@@ -59,16 +59,26 @@ class ResearchState(TypedDict):
     analysis_decision: str
     sources: Dict   
 ```
+## Tools
+
+### Web Fetching Tool
+- Using DDGS tool to fetch URLs using DuckDuckGo's utility
+- Parsing each URL using Beautiful Soup
+
+### LLM
+- Calling Gemimi using Gemini's API
 
 ## Memory Subsystems
 
 ### Vector Memory
+- Used FAISS for storing into vector DB
 - Used for semantic retrieval
 - Info fetched from the internet is stored in vector memory
   
 ### Graph Memory
 - Persistent entity co-occurrence graph
 - Optimized for auditability and traceability
+- Used networkx for creating the graph and using Spacy to create tokens 
 
 ## Failure Handling
 - Tool calls are isolated per agent
