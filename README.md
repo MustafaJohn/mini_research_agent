@@ -1,8 +1,8 @@
 # Multi-Agent Research System 
 
-This project implements an execution-driven, agentic research system using LangGraph. The focus is on **control flow, state management, tool isolation, and memory separation**, rather than prompt chaining. 
+This project implements an execution-driven, agentic research system using LangGraph. The user inputs a topic/area he wishes to research and the system fetches information and displays potential research areas along with reference sources.  
 
-The system is intentionally designed as a stateless execution graph with explicit state transitions and defined failure boundaries.
+The focus is on **control flow, state management, tool isolation, and memory separation**, rather than prompt chaining. The system is intentionally designed as a stateless execution graph with explicit state transitions and defined failure boundaries.
 
 Install requirements using requirements.txt
 ---
