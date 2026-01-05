@@ -161,23 +161,6 @@ Based on the provided context, here are potential research areas in Financial Te
 *   **Overcoming Managerial Myopia:** Investigating how digital technology innovation impacts or helps overcome managerial myopia in enterprises.
 *   **Business Reimagining:** Rethinking how businesses are designed, motivated, and organized in the "Tech Era."
 
-**5. Regulation, Risk, and Banking Performance**
-*   **Impact on Traditional Banks:** Assessing the impact of financial technology on the performance of traditional financial banks (e.g., specific case studies like the Indonesia Stock Exchange).
-*   **Regulatory Frameworks:** Developing regulatory and supervisory frameworks that balance the promotion of innovation with the containment of FinTech risks (security, trust, and systemic risk).
-*   **Nonbank Financial Players:** Analyzing the rise of nonbank players since the 2008 financial crisis and their competition with traditional institutions.
-
-**5. Regulation, Risk, and Banking Performance**
-*   **Impact on Traditional Banks:** Assessing the impact of financial technology on the performance of traditional financial banks (e.g., specific case studies like the Indonesia Stock Exchange).
-**5. Regulation, Risk, and Banking Performance**
-**5. Regulation, Risk, and Banking Performance**
-*   **Impact on Traditional Banks:** Assessing the impact of financial technology on the performance of traditional financial banks (e.g., specific case studies like the Indonesia Stock Exchange).
-*   **Regulatory Frameworks:** Developing regulatory and supervisory frameworks that balance the promotion of innovation with the containment of FinTech risks (security, trust, and systemic risk).
-*   **Nonbank Financial Players:** Analyzing the rise of nonbank players since the 2008 financial crisis and their competition with traditional institutions.
-
-**6. Corporate Management and Strategy**
-*   **Overcoming Managerial Myopia:** Investigating how digital technology innovation impacts or helps overcome managerial myopia in enterprises.
-*   **Business Reimagining:** Rethinking how businesses are designed, motivated, and organized in the "Tech Era."
-
 **7. Interdisciplinary FinTech Applications**
 *   **Expansion into New Fields:** Exploring the novel incorporation of FinTech issues into non-financial fields such as Dentistry, Nursing, and Veterinary practices.
 ```
