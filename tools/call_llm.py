@@ -21,6 +21,6 @@ def call_llm(prompt: str, model: Optional[str] = None) -> str:
         ValueError: If API key is not set
         Exception: If API call fails
     """
-    client = genai.Client(api_key="AIzaSyCTyEdp66wslCOQAnG9SLofxXuUGUelQBc")
+    client = genai.Client(api_key=API_KEY)
     model = "gemini-2.5-pro"
     return client.models.generate_content(model=model, contents=prompt).text
